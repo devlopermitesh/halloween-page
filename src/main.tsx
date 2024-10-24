@@ -4,6 +4,7 @@ import App from './App.tsx'
 import './index.css'
 import {RouterProvider,createBrowserRouter,} from "react-router-dom"
 const Home=lazy(()=>import('./pages/Home.tsx'))
+const Nopage=lazy(()=>import('./pages/Nopage.tsx'))
 import Loading from './pages/Loading.tsx'
 const router=createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router=createBrowserRouter([
       {
 path:"/",
 element:<Suspense fallback={<Loading/>}><Home/></Suspense>
+      },
+      {
+        path:"*",
+        element:<Suspense fallback={<Loading/>}><Nopage/></Suspense>
       }
     ]
   }
