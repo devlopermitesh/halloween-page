@@ -9,7 +9,7 @@ interface Butttonprops extends React.ButtonHTMLAttributes<HTMLButtonElement>{
 }
 const Button:React.FC<Butttonprops> = ({name,onclick,className='',hoverClassName}) => {
   return (
-    <button className={`rounded-md w-24 h-7 bg-orange-500 mx-2  text-center  ${className} ${hoverClassName}`} onClick={onclick}>{name}</button>
+    <button className={`rounded-md w-24 h-7 bg-orange-500 mx-2  text-center  ${className} hover:${hoverClassName}`} onClick={onclick}>{name}</button>
   )
 }
 
