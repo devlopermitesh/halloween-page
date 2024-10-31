@@ -6,7 +6,7 @@ function App() {
 
   return (
   <>
-  <section className='flex flex-col bg-black h-full w-full absolute top-0 left-0'>
+  <section className='flex flex-col bg-black h-full w-full absolute top-0 '>
   <Navbar/>
   <Outlet></Outlet>
   <Footer/>

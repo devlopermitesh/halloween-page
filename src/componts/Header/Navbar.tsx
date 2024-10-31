@@ -17,8 +17,8 @@ export const Menu=[
     },
     {
         item:2,
-        name:"About",
-        link:"/about",
+        name:"Game",
+        link:"/game",
     },
     {
         item:3,

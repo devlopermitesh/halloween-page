@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../componts/common/Button';
+import { Link } from 'react-router-dom';
 
 interface FormItem {
   itemno: number;
@@ -14,13 +15,19 @@ interface FormItem {
 const form: FormItem[] = [
   { itemno: 1, label: "What is your name?", type: "text", placeholder: "Enter your name", buttonname: "Next" },
   { itemno: 2, label: "What is your age?", type: "number", placeholder: "Enter your age", buttonname: "Continue" },
-  { itemno: 3, label: "What is your email?", type: "email", placeholder: "Enter your email", buttonname: "Submit" }
+  { itemno: 3, label: "What is your email?", type: "email", placeholder: "Enter your email", buttonname: "Next" },
+  { itemno: 4, label: "Set your password", type: "password", placeholder: "Enter your password", buttonname: "Next" },
+  { itemno: 5, label: "Enter OTP", type: "text", placeholder: "Enter OTP sent to your email", buttonname: "Next" },
+  { itemno: 6, label: "What is your gender?", type: "select", placeholder: "", buttonname: "Submit" },
 ];
 
 interface FormValues {
   name?: string;
   age?: number;
   email?: string;
+  password?: string;
+  otp?: string;
+  gender?: string;
 }
 
 const Signup: React.FC = () => {
@@ -33,7 +40,7 @@ const Signup: React.FC = () => {
       if (currentStep < form.length - 1) {
         setCurrentStep(currentStep + 1);
       } else {
-        alert('🎃 Your account is done! 🕸️ Welcome to the haunted network!');
+        alert('🎉 Your account is created! Welcome aboard!');
       }
     }
   };
@@ -44,7 +51,7 @@ const Signup: React.FC = () => {
 
   return (
     <section className="flex flex-col bg-[#121212] h-full w-full justify-center items-center overflow-hidden">
-      <form onSubmit={handleSubmit(onSubmit)} className="h-1/2 w-1/2 md:w-1/2 overflow-hidden flex flex-col space-y-4">
+      <form onSubmit={handleSubmit(onSubmit)} className="h-1/2 w-1/2 md:w-1/2 flex flex-col space-y-4">
         <AnimatePresence>
           {form.map((item, index) => (
             index === currentStep && (
@@ -59,37 +66,52 @@ const Signup: React.FC = () => {
                 <label className="block text-2xl md:text-3xl lg:text-4xl text-orange-500 font-jaro mx-auto my-1">
                   {item.label}
                 </label>
-                <input
-                  {...register(item.label.toLowerCase() as keyof FormValues, {
-                    required: `👻 Beware! The ${item.label.toLowerCase()} is haunted without your input! 🕸️`,
-                    ...(item.type === 'email' && {
-                      pattern: {
-                        value: /^\S+@\S+$/i,
-                        message: '🎃 Ghastly email! Please enter a valid one. 💀'
+
+                {item.type === "select" ? (
+                  <select
+                    {...register("gender", { required: "Please select your gender" })}
+                    className="block text-black font-jaro rounded-md w-[90%] px-2 py-1"
+                  >
+                    <option value="">Select gender</option>
+                    <option value="Male">♂️ Male</option>
+                    <option value="Female">♀️ Female</option>
+                    <option value="Other">⚥ Other</option>
+                  </select>
+                ) : (
+                  <input
+                    {...register(item.label.toLowerCase() as keyof FormValues, {
+                      required: `Please enter your ${item.label.toLowerCase()}`,
+                      ...(item.type === 'email' && {
+                        pattern: {
+                          value: /^\S+@\S+$/i,
+                          message: 'Please enter a valid email address.'
+                        }
+                      }),
+                      ...(item.type === 'number' && {
+                        min: {
+                          value: 0,
+                          message: 'Age must be a positive number.'
+                        }
+                      })
+                    })}
+                    className="block text-black font-jaro rounded-md w-[90%] px-2 py-1"
+                    type={item.type}
+                    placeholder={item.placeholder}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') {
+                        e.preventDefault();
+                        handleNext();
                       }
-                    }),
-                    ...(item.type === 'number' && {
-                      min: {
-                        value: 0,
-                        message: '🧟 Age must be a positive number to avoid the curse! 🧛‍♂️'
-                      }
-                    })
-                  })}
-                  className="block text-black font-jaro rounded-md w-[90%] px-2 py-1"
-                  type={item.type}
-                  placeholder={item.placeholder}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
-                      e.preventDefault();
-                      handleNext();
-                    }
-                  }}
-                />
+                    }}
+                  />
+                )}
+
                 {errors[item.label.toLowerCase() as keyof FormValues] && (
                   <span className="text-red-500 text-sm">
                     {errors[item.label.toLowerCase() as keyof FormValues]?.message}
                   </span>
                 )}
+
                 <Button
                   name={item.buttonname}
                   onclick={handleNext}
@@ -101,6 +123,7 @@ const Signup: React.FC = () => {
           ))}
         </AnimatePresence>
       </form>
+      <q className='text-orange-400 font-jaro text-sm md:text-xl'>Already have an account?<b><Link to="/login" className='text-orange-500 font-jaro underline'> Login</Link></b></q>
     </section>
   );
 };

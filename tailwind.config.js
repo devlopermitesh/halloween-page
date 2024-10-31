@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         jaro: ['Jaro', 'sans-serif'],
         inika: ['Inika', 'serif'],
+        inder: ['Inder', 'sans-serif'],
       },
     },
   },
