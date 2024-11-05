@@ -1,0 +1,305 @@
+ {
+    "quizzes":[
+    {
+        "id": 1,
+        "question": "What is the name of the legendary ghost that haunts the city of Salem?",
+        "options": ["The Witch of Salem", "The Headless Horseman", "The Phantom of Salem", "The Salem Spirit"],
+        "answer": "The Witch of Salem"
+    },
+    {
+        "id": 2,
+        "question": "What vegetable was originally used to carve jack-o'-lanterns before pumpkins?",
+        "options": ["Turnips", "Beets", "Potatoes", "Carrots"],
+        "answer": "Turnips"
+    },
+    {
+        "id": 3,
+        "question": "In which country did the tradition of Halloween originate?",
+        "options": ["USA", "Ireland", "Scotland", "Germany"],
+        "answer": "Ireland"
+    },
+    {
+        "id": 4,
+        "question": "What is the most popular candy during Halloween?",
+        "options": ["Chocolate", "Candy Corn", "Gummy Bears", "Lollipops"],
+        "answer": "Candy Corn"
+    },
+    {
+        "id": 5,
+        "question": "What is the name of the character that is known as the 'Pumpkin King'?",
+        "options": ["Jack Skellington", "Sally", "Oogie Boogie", "Zero"],
+        "answer": "Jack Skellington"
+    },
+    {
+        "id": 6,
+        "question": "What do you call a group of witches?",
+        "options": ["Coven", "Circle", "Gathering", "Clan"],
+        "answer": "Coven"
+    },
+    {
+        "id": 7,
+        "question": "Which phobia is the fear of Halloween?",
+        "options": ["Samhainophobia", "Phasmophobia", "Nyctophobia", "Cacophobia"],
+        "answer": "Samhainophobia"
+    },
+    {
+        "id": 8,
+        "question": "What type of creature is a vampire?",
+        "options": ["Human", "Animal", "Undead", "Ghost"],
+        "answer": "Undead"
+    },
+    {
+        "id": 9,
+        "question": "What is a common symbol of Halloween?",
+        "options": ["Ghost", "Eagle", "Bunny", "Cat"],
+        "answer": "Ghost"
+    },
+    {
+        "id": 10,
+        "question": "Which horror movie features a character named Freddy Krueger?",
+        "options": ["Halloween", "A Nightmare on Elm Street", "Scream", "The Exorcist"],
+        "answer": "A Nightmare on Elm Street"
+    },
+    {
+        "id": 11,
+        "question": "What color is typically associated with Halloween?",
+        "options": ["Red", "Blue", "Purple", "Orange"],
+        "answer": "Orange"
+    },
+    {
+        "id": 12,
+        "question": "What creature is said to change from a human to a wolf?",
+        "options": ["Vampire", "Zombie", "Werewolf", "Ghost"],
+        "answer": "Werewolf"
+    },
+    {
+        "id": 13,
+        "question": "What do you call the evening before Halloween?",
+        "options": ["All Hallows Eve", "Halloween Night", "Witching Hour", "Fright Night"],
+        "answer": "All Hallows Eve"
+    },
+    {
+        "id": 14,
+        "question": "What is the traditional Halloween game involving apples?",
+        "options": ["Apple Toss", "Bob for Apples", "Apple Hunt", "Apple Grab"],
+        "answer": "Bob for Apples"
+    },
+    {
+        "id": 15,
+        "question": "What does the term 'Hallow' mean?",
+        "options": ["Saint", "Evil", "Monster", "Ghost"],
+        "answer": "Saint"
+    },
+    {
+        "id": 16,
+        "question": "In which horror film do kids dress as monsters to commit murder?",
+        "options": ["Halloween", "Trick 'r Treat", "It", "The Purge"],
+        "answer": "Trick 'r Treat"
+    },
+    {
+        "id": 17,
+        "question": "What type of animal is often associated with witches?",
+        "options": ["Cats", "Dogs", "Ravens", "Bats"],
+        "answer": "Cats"
+    },
+    {
+        "id": 18,
+        "question": "Which candy is known for its orange and black wrappers?",
+        "options": ["Reese's Peanut Butter Cups", "Kit Kats", "Butterfingers", "Snickers"],
+        "answer": "Reese's Peanut Butter Cups"
+    },
+    {
+        "id": 19,
+        "question": "What is the name of the ghostly figure that is said to appear on Halloween night?",
+        "options": ["The Grim Reaper", "Banshee", "Wraith", "Spook"],
+        "answer": "Banshee"
+    },
+    {
+        "id": 20,
+        "question": "What is the main purpose of trick-or-treating?",
+        "options": ["Scaring people", "Getting candy", "Meeting friends", "Playing games"],
+        "answer": "Getting candy"
+    },
+    {
+        "id": 21,
+        "question": "What is the most famous Halloween parade in the United States?",
+        "options": ["New York City Halloween Parade", "Los Angeles Halloween Parade", "Chicago Halloween Parade", "San Francisco Halloween Parade"],
+        "answer": "New York City Halloween Parade"
+    },
+    {
+        "id": 22,
+        "question": "What vegetable is traditionally used to make a scarecrow?",
+        "options": ["Pumpkin", "Corn", "Carrot", "Turnip"],
+        "answer": "Pumpkin"
+    },
+    {
+        "id": 23,
+        "question": "What is the name of the creature that is half-vampire and half-werewolf?",
+        "options": ["Witch", "Demon", "Hybrid", "Lycantine"],
+        "answer": "Hybrid"
+    },
+    {
+        "id": 24,
+        "question": "What Halloween creature is known for its long, pointed hat?",
+        "options": ["Goblin", "Witch", "Ghost", "Mummy"],
+        "answer": "Witch"
+    },
+    {
+        "id": 25,
+        "question": "Which ghost is known for being friendly?",
+        "options": ["Banshee", "Casper", "Poltergeist", "Specter"],
+        "answer": "Casper"
+    },
+    {
+        "id": 26,
+        "question": "What item do witches traditionally fly on?",
+        "options": ["Broomstick", "Carpet", "Horse", "Couch"],
+        "answer": "Broomstick"
+    },
+    {
+        "id": 27,
+        "question": "What is the name of the famous Halloween movie with a pumpkin in the title?",
+        "options": ["The Great Pumpkin", "Pumpkinhead", "Pumpkin Spice", "Pumpkin Patch"],
+        "answer": "The Great Pumpkin"
+    },
+    {
+        "id": 28,
+        "question": "What type of ghost is known for haunting a specific location?",
+        "options": ["Apparition", "Poltergeist", "Specter", "Banshee"],
+        "answer": "Apparition"
+    },
+    {
+        "id": 29,
+        "question": "Which Halloween creature is known for its ability to shapeshift?",
+        "options": ["Vampire", "Werewolf", "Witch", "Ghost"],
+        "answer": "Werewolf"
+    },
+    {
+        "id": 30,
+        "question": "What is the name of the undead creature that is often depicted as a reanimated corpse?",
+        "options": ["Zombie", "Ghost", "Mummy", "Vampire"],
+        "answer": "Zombie"
+    },
+    {
+        "id": 31,
+        "question": "What is the traditional Halloween color combination?",
+        "options": ["Red and Green", "Black and Orange", "Blue and White", "Purple and Yellow"],
+        "answer": "Black and Orange"
+    },
+    {
+        "id": 32,
+        "question": "What is the origin of the word 'Halloween'?",
+        "options": ["All Hallows' Evening", "Harvest Festival", "Spooky Night", "Monster Celebration"],
+        "answer": "All Hallows' Evening"
+    },
+    {
+        "id": 33,
+        "question": "What do you call a male witch?",
+        "options": ["Wizard", "Warlock", "Sorcerer", "Druid"],
+        "answer": "Warlock"
+    },
+    {
+        "id": 34,
+        "question": "Which mythical creature is known for guarding treasures?",
+        "options": ["Dragon", "Phoenix", "Unicorn", "Griffin"],
+        "answer": "Dragon"
+    },
+    {
+        "id": 35,
+        "question": "What is the primary theme of Halloween?",
+        "options": ["Horror", "Joy", "Love", "Peace"],
+        "answer": "Horror"
+    },
+    {
+        "id": 36,
+        "question": "What is the traditional Halloween monster that is said to rise from the dead?",
+        "options": ["Zombie", "Mummy", "Ghost", "Vampire"],
+        "answer": "Zombie"
+    },
+    {
+        "id": 37,
+        "question": "What animal is often considered a symbol of Halloween?",
+        "options": ["Cat", "Dog", "Mouse", "Bird"],
+        "answer": "Cat"
+    },
+    {
+        "id": 38,
+        "question": "What famous horror author wrote 'Dracula'?",
+        "options": ["Edgar Allan Poe", "Mary Shelley", "Bram Stoker", "Stephen King"],
+        "answer": "Bram Stoker"
+    },
+    {
+        "id": 39,
+        "question": "What do people traditionally say when they go trick-or-treating?",
+        "options": ["Happy Halloween", "Trick or Treat", "Boo", "Scare me"],
+        "answer": "Trick or Treat"
+    },
+    {
+        "id": 40,
+        "question": "What is the name of the skeleton character from 'The Nightmare Before Christmas'?",
+        "options": ["Oogie Boogie", "Jack Skellington", "Sally", "Zero"],
+        "answer": "Jack Skellington"
+    },
+    {
+        "id": 41,
+        "question": "What do you typically find in a haunted house?",
+        "options": ["Friendly ghosts", "Real estate agents", "Zombies", "Scary decorations"],
+        "answer": "Scary decorations"
+    },
+    {
+        "id": 42,
+        "question": "Which fruit is often associated with Halloween?",
+        "options": ["Apple", "Orange", "Banana", "Grape"],
+        "answer": "Apple"
+    },
+    {
+        "id": 43,
+        "question": "What do witches brew in their cauldrons?",
+        "options": ["Potions", "Soups", "Teas", "Brews"],
+        "answer": "Potions"
+    },
+    {
+        "id": 44,
+        "question": "Which day is Halloween celebrated?",
+        "options": ["October 31", "November 1", "October 30", "November 2"],
+        "answer": "October 31"
+    },
+    {
+        "id": 45,
+        "question": "What do ghosts often say?",
+        "options": ["Boo", "Yikes", "Help", "Scary"],
+        "answer": "Boo"
+    },
+    {
+        "id": 46,
+        "question": "What is the most famous ghost story of all time?",
+        "options": ["The Legend of Sleepy Hollow", "A Christmas Carol", "Dracula", "Frankenstein"],
+        "answer": "The Legend of Sleepy Hollow"
+    },
+    {
+        "id": 47,
+        "question": "What is a popular Halloween-themed dessert?",
+        "options": ["Pumpkin Pie", "Apple Pie", "Chocolate Cake", "Pecan Pie"],
+        "answer": "Pumpkin Pie"
+    },
+    {
+        "id": 48,
+        "question": "Which Halloween monster is known for his stitches and scars?",
+        "options": ["Frankenstein's Monster", "Zombie", "Mummy", "Werewolf"],
+        "answer": "Frankenstein's Monster"
+    },
+    {
+        "id": 49,
+        "question": "What is the name of the day after Halloween?",
+        "options": ["All Saints' Day", "All Hallows' Day", "Dia de los Muertos", "Veterans Day"],
+        "answer": "All Saints' Day"
+    },
+    {
+        "id": 50,
+        "question": "What do you call the fear of spiders, often seen during Halloween?",
+        "options": ["Arachnophobia", "Entomophobia", "Ophidiophobia", "Cacophobia"],
+        "answer": "Arachnophobia"
+    }
+]
+ 
+}

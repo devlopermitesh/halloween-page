@@ -3,12 +3,14 @@ import { NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../common/Button';
 import { Menu } from './Navbar';
-
+import { useNavigate } from 'react-router-dom';
 interface MenulistProps {
   isOpen: boolean; 
 }
 
 const Menulist: React.FC<MenulistProps> = ({ isOpen }) => {
+  const navigate=useNavigate();
+  const authoristed = true;
   return (
     <AnimatePresence>
       {isOpen && (
@@ -30,16 +32,23 @@ const Menulist: React.FC<MenulistProps> = ({ isOpen }) => {
                 </NavLink>
               </motion.li>
             ))}
+            <a className='my-auto' href='https://x.com/MiteshGehl60337'>
             <Button
               name="x@mitesh"
               onclick={() => {}}
               className='bg-gray-800 border-white border-solid border my-auto text-slate-300'
               hoverClassName='bg-grey-900 text-white'
-            />
+            /></a>
             <Button
               name="Login"
+              onclick={() => {navigate('/login')}}
+              className={`my-auto text-black border-solid border ${(authoristed ? 'hidden' : 'block')}`}
+              hoverClassName='bg-orange-500'
+            />
+            <Button
+              name="Logout"
               onclick={() => {}}
-              className='my-auto text-black border-solid border'
+              className={`my-auto text-black border-solid border ${ (authoristed ? 'block' : 'hidden') }`}
               hoverClassName='bg-orange-500'
             />
           </ul>

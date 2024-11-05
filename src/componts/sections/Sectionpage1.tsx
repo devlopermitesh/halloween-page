@@ -7,7 +7,7 @@ const Sectionpage1 = () => {
       <img src={Banner} className='object-cover h-[91%] w-[90%] md:w-3/4 bg-black' alt='Halloween image' />
 
       <div className='text-white flex items-center justify-center w-full h-[91%] relative text-center flex-col  space-y-5  bg-black md:w-1/2'>
-        <h2 className='font-inika text-2xl mt-4'>31st October 2024</h2>
+        <h2 className='font-inika text-2xl mt-4'>31st October 2025</h2>
         <h1 className='capitalize font-jaro text-4xl md:text-5xl animate-pulse text-orange-500' 
             style={{ textShadow: "1px 1px 1px white" }}>
           Happy Halloween
